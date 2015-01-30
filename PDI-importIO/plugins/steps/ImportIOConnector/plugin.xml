@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	id: 			String uniquely identifying the job entry. Used in serialization. 
+	iconfile:		The job entry icon used in spoon
+	description: 	The name of the job entry as it appears in Spoon
+	tooltip:		The tooltip of the job entry as it appears in Spoon
+	category:		The job entry category in the tree view in Spoon
+	classname:		The job entry class implementing JobeEntryInterface
+ -->
+<plugin
+   id="ImportIOConnector"
+   iconfile="img/connector.png"
+   description="Import IO Connector"
+   tooltip="Query an import IO connector"
+   category="Lookup"
+   classname="com.linalis.pdi.steps.importioconnector.ImportIOConnectorStepMeta">
+		
+		<!-- the list of jar files to include when loading the job entry -->
+		<libraries>
+			<library name="lib/com.importio.api.clientlite-2.0.0.jar"/>
+			<library name="lib/lombok-0.11.8.jar"/>
+			<library name="lib/jackson-core-asl-1.9.12.jar"/>
+			<library name="lib/jackson-mapper-asl-1.9.12.jar"/>
+		</libraries>
+		
+</plugin>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	id: 			String uniquely identifying the job entry. Used in serialization. 
+	iconfile:		The job entry icon used in spoon
+	description: 	The name of the job entry as it appears in Spoon
+	tooltip:		The tooltip of the job entry as it appears in Spoon
+	category:		The job entry category in the tree view in Spoon
+	classname:		The job entry class implementing JobeEntryInterface
+ -->
+<plugin
+   id="RedisInput"
+   iconfile="img/redis-input.png"
+   description="Redis Input"
+   tooltip="Inputs into a Redis server"
+   category="Input"
+   classname="com.linalis.pdi.steps.redisInput.RedisInputMeta">
+		
+		<!-- the list of jar files to include when loading the job entry -->
+		<libraries>
+			<library name="lib/jedis-2.6.1.jar"/>
+			<library name="lib/commons-pool2-2.2.jar"/>
+		</libraries>
+		
+</plugin>

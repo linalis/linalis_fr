@@ -1,0 +1,5 @@
+target/
+*.class
+doc/
+jar/
+.DS_Store
